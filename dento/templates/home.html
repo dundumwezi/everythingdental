@@ -1,0 +1,570 @@
+{% extends 'base.html' %}
+{% block title %}
+  Everything Dental
+{% endblock %}
+{% load static %}
+
+{% block content %}
+<!-- ***** Welcome Area Start ***** -->
+  <section class="welcome-area">
+    <!-- Welcome Slides -->
+    <div class="welcome-slides owl-carousel">
+      <!-- Single Welcome Slide -->
+      <div class="welcome-welcome-slide bg-img bg-gradient-overlay jarallax" style="background-image: url({% static 'dento/img/bg-img/1.jpg' %});">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-12">
+              <!-- Welcome Text -->
+              <div class="welcome-text text-center">
+                <h2 data-animation="fadeInUp" data-delay="100ms">Everything Dental</h2>
+                <p data-animation="fadeInUp" data-delay="300ms">We love to make you smile.
+                </p>
+                <div class="welcome-btn-group">
+                  <a href="#appointment" class="btn dento-btn mx-2" data-animation="fadeInUp" data-delay="500ms">Get Started</a>
+                  <a href="{% url 'contact' %}" class="btn dento-btn mx-2 active" data-animation="fadeInUp" data-delay="700ms">Contact Us</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Single Welcome Slide -->
+      <div class="welcome-welcome-slide bg-img bg-gradient-overlay jarallax" style="background-image: url({% static 'dento/img/bg-img/2.jpg' %});">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-12">
+              <!-- Welcome Text -->
+              <div class="welcome-text text-center">
+                <h2 data-animation="fadeInDown" data-delay="100ms">We Believe Everyone Should Have Easy Access To Great Dental Care</h2>
+                <p data-animation="fadeInDown" data-delay="300ms">Everthng Dental is a leader in dental care and oral health and hygiene services. we boast of state of the art equipment and a highly skilled personel. Great service, great staff, great smiles.
+                </p>
+                <div class="welcome-btn-group">
+                  <a href="#appointment" class="btn dento-btn mx-2" data-animation="fadeInDown" data-delay="500ms">Get Started</a>
+                  <a href="{% url 'contact' %}" class="btn dento-btn mx-2 active" data-animation="fadeInDown" data-delay="700ms">Contact Us</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Welcome Area End ***** -->
+  <section class="dento-about-us-area section-padding-100-0">
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <!-- About Content -->
+        <div class="col-12 col-md-6">
+          <div class="about-us-content mb-50">
+            <!-- Section Heading -->
+            <div class="section-heading">
+              <h2>Service with class, elegance &amp style</h2>
+              <div class="line"></div>
+            </div>
+              <p>To us it is more than just work. It is passion. We love what we do and we are great at it. With love and care, at Everything Dental, we go an extra mile to make your experience as comfortable as possible.<br/>
+                Our dentistry is fully equiped with classy yet state of the art dental equipment and utencils.
+              </p>
+          </div>
+        </div>
+        <!-- About Us Thumbnail -->
+        <div class="col-12 col-md-6">
+          <div class="about-us-thumbnail mb-50">
+            <img src="{% static 'dento/img/bg-img/dent.jpg' %}" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ****** About Us Area Start ******* -->
+  <section class="dento-about-us-area section-padding-100-0">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- About Us Thumbnail -->
+        <div class="col-12 col-md-6">
+          <div class="about-us-thumbnail mb-50">
+            <img src="{% static 'dento/img/bg-img/15.jpg' %}" alt="">
+          </div>
+        </div>
+        <!-- About Content -->
+        <div class="col-12 col-md-6">
+          <div class="about-us-content mb-50">
+            <!-- Section Heading -->
+            <div class="section-heading">
+              <h2>Because we love to see you smile...</h2>
+                <div class="line"></div>
+              </div>
+              <p>Our team of certified, professional and experienced practitioners is more than able to handle all your dental care and oral health and hygiene needs.<br/>
+                Contact us for more information.
+              </p>
+            
+            <!-- Single Skills Area -->
+            <div class="single-skills-area mt-30">
+              <h6>Experience Dentist</h6>
+              <div id="bar1" class="barfiller">
+                <span class="tip"></span>
+                <span class="fill" data-percentage="95"></span>
+              </div>
+            </div>
+
+            <!-- Single Skills Area -->
+            <div class="single-skills-area mt-30">
+              <h6>Modern Equipment</h6>
+              <div id="bar2" class="barfiller">
+                <span class="tip"></span>
+                <span class="fill" data-percentage="75"></span>
+              </div>
+            </div>
+
+            <!-- Single Skills Area -->
+            <div class="single-skills-area mt-30">
+              <h6>Friendly Staff</h6>
+              <div id="bar3" class="barfiller">
+                <span class="tip"></span>
+                <span class="fill" data-percentage="90"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ****** About Us Area End ****** -->
+
+  <div class="container">
+    <div class="dento-border clearfix"></div>
+  </div>
+
+  <!-- Cool Facts Area Start -->
+  <section class="dento-cta-area">
+    <div class="container">
+      <div class="row">
+        <!-- Cool Facts Area -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single-cta text-center mt-50 mb-100">
+            <i class="icon_genius"></i>
+            <h2><span class="counter">20</span></h2>
+            <h5>Years Of Experience</h5>
+          </div>
+        </div>
+
+        <!-- Cool Facts Area -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single-cta text-center mt-50 mb-100">
+            <i class="icon_heart_alt"></i>
+            <h2><span class="counter">700</span>+</h2>
+            <h5>Happy Patients</h5>
+          </div>
+        </div>
+
+        <!-- Cool Facts Area -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single-cta text-center mt-50 mb-100">
+            <i class="icon_book_alt"></i>
+            <h2><span class="counter">120</span></h2>
+            <h5>Certificate</h5>
+          </div>
+        </div>
+
+        <!-- Cool Facts Area -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single-cta text-center mt-50 mb-100">
+            <i class="icon_id"></i>
+            <h2><span class="counter">40</span>+</h2>
+            <h5>Dentist</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Cool Facts Area End -->
+
+  <!-- ***** Blog Area Start ***** -->
+  <section class="dento-blog-area section-padding-100-0 clearfix">
+    <div class="container">
+      <div class="row">
+        <!-- Section Heading -->
+        <div class="col-12">
+          <div class="section-heading text-center">
+            <h2><a href="{% url 'service' %}">Our Services Include:</a></h2>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Single Blog Item -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="single-blog-item mb-100">
+            <a href="{% url 'service' %}">
+              <img src="{% static 'dento/img/bg-img/treatments.jpg' %}" alt="">
+            </a>
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <center><a href="./blog-details.html" class="post-title">Teeth Whitening</a></center>
+              <div class="post-meta"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Blog Item -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="single-blog-item mb-100">
+            <a href="{% url 'service' %}">
+              <img src="{% static 'dento/img/bg-img/kid.jpg' %}" alt="">
+            </a>
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <center><a href="./blog-details.html" class="post-title">Paediatric Dental Care</a></center>
+              <div class="post-meta"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Blog Item -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="single-blog-item mb-100">
+            <a href="{% url 'service' %}">
+              <img src="{% static 'dento/img/bg-img/Foto.jpg' %}" alt="">
+            </a>
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <center><a href="./blog-details.html" class="post-title">Cosmetic Dentistry</a></center>
+              <div class="post-meta"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Blog Area End ***** -->
+
+  <!-- Dento Pricing Table Area Start -->
+  <section class="dento-pricing-table-area section-padding-100">
+    <div class="container">
+      <div class="row">
+        <!-- Section Heading -->
+        <div class="col-12">
+          <div class="section-heading text-center">
+            <h2>Pricing</h2>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="dento-price-table table-responsive">
+            <table class="table table-borderless mb-0">
+              <thead>
+                <tr>
+                  <th scope="col">Service Names</th>
+                  <th scope="col">Stage</th>
+                  <th scope="col">Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Teeth Whitening Service at home</th>
+                  <td>1 times</td>
+                  <td>$115.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Teeth Whitening Service at Dental Clinic</th>
+                  <td>1 times</td>
+                  <td>$100.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Ceramic crowns and fillings Dental porcelain</th>
+                  <td>1 times</td>
+                  <td>$99.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Remove crowns, bridges Service</th>
+                  <td>1 tooth</td>
+                  <td>$50.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Covering the recession of the gums</th>
+                  <td>1 times</td>
+                  <td>$400.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Consultation, impressions and preparation of models</th>
+                  <td>1 times</td>
+                  <td>$35.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Removal of an old inlay, old crown</th>
+                  <td>1 times</td>
+                  <td>$99.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Overlay teeth whitening ( 2 arches)</th>
+                  <td>1 times</td>
+                  <td>$170.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Standard porcelain and zirconium crown on implant</th>
+                  <td>1 tooth</td>
+                  <td>$499.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Implantation of an implant (price depends on system used)</th>
+                  <td>1 tooth</td>
+                  <td>$600.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="more-btn text-center mt-50">
+            <a href="{% url 'pricing' %}" class="btn dento-btn">Read More <i class="fa fa-angle-double-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Dento Pricing Table Area End -->
+
+  <!-- Book An Oppointment Area Start -->
+  <section id="appointment" class="book-an-oppointment-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url({% static 'dento/img/bg-img/12.jpg' %});">
+    <div class="container">
+      <div class="row">
+        <!-- Section Heading -->
+        <div class="col-12">
+          <div class="section-heading text-center white">
+            <h2>Book An Apointment</h2>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <!-- Appointment Form -->
+          <div class="appointment-form">
+            <form action="{% url 'appointment' %}" method="post">
+              {% csrf_token %}
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group mb-30">
+                    <input type="text" name="your-name" class="form-control" placeholder="Your Name" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group mb-30">
+                    <input type="text" name="your-phone" class="form-control" placeholder="Your Phone" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group mb-30">
+                    <input type="email" name="your-email" class="form-control" placeholder="Your Email" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group mb-30">
+                    <input type="text" name="your-address" class="form-control" placeholder="Your Address">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group mb-30">
+                    <select name="your-schedule" class="form-control">
+                      <option value="Choose Your Scheldule">Choose Your Scheldule</option>
+                      <option value="9 AM to 10 AM">9 AM to 10 AM</option>
+                      <option value="11 AM to 12 PM">11 AM to 12 PM</option>
+                      <option value="2 PM to 4 PM">2 PM to 4 PM</option>
+                      <option value="8 PM to 10 PM">8 PM to 10 PM</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group mb-30">
+                    <select name="your-date" class="form-control">
+                      <option value="Choose Your Time">Choose Your Date</option>
+                      <option value="Monday">Monday</option>
+                      <option value="Tuesday">Tuesday</option>
+                      <option value="Wednesday">Wednesday</option>
+                      <option value="Thursday">Thursday</option>
+                      <option value="Friday">Friday</option>
+                      <option value="Saturday">Saturday</option>
+                      <option value="Sunday">Sunday</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group mb-30">
+                    <select name="your-service" class="form-control">
+                      <option value="Select Service">Select Service</option>
+                      <option value="General Consultancy">General Consultancy</option>
+                      <option value="Teeth Whitening">Teeth Whitening</option>
+                      <option value="Paediatrics">Paediatrics</option>
+                      <option value="Dental Cosmetics">Dental Cosmetics</option>
+                      <option value="Tooth Implants">Tooth Implant</option>
+                      <option value="Extractions &amp Fillings">Extractions &amp Fillings</option>
+                      <option value="Periodontal Cleaning">Periodontal Cleaning</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12 text-center">
+                  <button type="submit" class="btn dento-btn">Booking Now</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Book An Oppointment Area End -->
+
+<div class="col-12">
+          <div class="section-heading text-center">
+            <br/><br/>
+            <br/><br/>
+            <h2>Testimonials</h2>
+            <div class="line"></div>
+          </div>
+  </div>
+  <!-- ***** Testimonials Area Start ***** -->
+  <section class="testimonials-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url({% static 'dento/img/bg-img/7.jpg' %});">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <!-- Testimonials Slides -->
+          <div class="testimonials-slides owl-carousel">
+            <!-- Single Testimonials Slide -->
+            <div class="single-testimonial-slide d-flex align-items-center">
+              <!-- Thumbnail -->
+              <div class="testimonial-thumb">
+                <img src="{% static 'dento/img/bg-img/28.jpg' %}" alt="">
+              </div>
+              <!-- Content -->
+              <div class="testimonial-content">
+                <h5>“Very friendly staff, great service and the environment is amazingly beautiful. They are now official my go-to dentistry.”</h5>
+                <h6>Brandon Schultz</h6>
+                <p>Dental Patient</p>
+              </div>
+            </div>
+
+            <!-- Single Testimonials Slide -->
+            <div class="single-testimonial-slide d-flex align-items-center">
+              <!-- Thumbnail -->
+              <div class="testimonial-thumb">
+                <img src="{% static 'dento/img/bg-img/27.jpg' %}" alt="">
+              </div>
+              <!-- Content -->
+              <div class="testimonial-content">
+                <h5>“Amazing people, very excellent service. I don't regret going to them for my implants.”</h5>
+                <h6>Amanda Simpson</h6>
+                <p>Dental Patient</p>
+              </div>
+            </div>
+
+            <!-- Single Testimonials Slide -->
+            <div class="single-testimonial-slide d-flex align-items-center">
+              <!-- Thumbnail -->
+              <div class="testimonial-thumb">
+                <img src="{% static 'dento/img/bg-img/8.jpg' %}" alt="">
+              </div>
+              <!-- Content -->
+              <div class="testimonial-content">
+                <h5>“I'd been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the working day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist is very reassuring and
+                  very helpful. Excellent treatment and advice.”</h5>
+                <h6>Ramsey Peters</h6>
+                <p>Dental Patient</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Testimonials Area End ***** -->
+  
+  <!-- ***** Dento Dentist Area Start ***** -->
+  <section class="dentist-area section-padding-100-0">
+    <div class="container">
+      <div class="row">
+        <!-- Section Heading -->
+        <div class="col-12">
+          <div class="section-heading text-center">
+            <h2>Our Dentist</h2>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Single Dentist Area -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="single-dentist-area mb-100">
+            <img src="{% static 'dento/img/bg-img/9.png' %}" alt="">
+            <!-- Dentist Content -->
+            <div class="dentist-content">
+              <!-- Social Info -->
+              <div class="dentist-social-info">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+              </div>
+              <!-- Dentist Info -->
+              <div class="dentist-info bg-gradient-overlay">
+                <h5>Michael Sanchez</h5>
+                <p>Implant Expert</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Dentist Area -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="single-dentist-area mb-100">
+            <img src="{% static 'dento/img/bg-img/10.png' %}" alt="">
+            <!-- Dentist Content -->
+            <div class="dentist-content">
+              <!-- Social Info -->
+              <div class="dentist-social-info">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+              </div>
+              <!-- Dentist Info -->
+              <div class="dentist-info bg-gradient-overlay">
+                <h5>Donay Harley</h5>
+                <p>Paediatrics Expert</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Dentist Area -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="single-dentist-area mb-100">
+            <img src="{% static 'dento/img/bg-img/11.png' %}" alt="">
+            <!-- Dentist Content -->
+            <div class="dentist-content">
+              <!-- Social Info -->
+              <div class="dentist-social-info">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+              </div>
+              <!-- Dentist Info -->
+              <div class="dentist-info bg-gradient-overlay">
+                <h5>Michelle Barsey</h5>
+                <p>Periodontist</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Dento Dentist Area End ***** -->
+
+{% endblock %}
