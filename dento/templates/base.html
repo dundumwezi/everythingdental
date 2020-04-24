@@ -49,7 +49,6 @@
           <div class="col-6 col-md-3 col-lg-4">
             <div class="top-header-social-info text-right">
               <a href="https://facebook.com" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a><a href="https://twitter.com" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
-              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Google Plus"><i class="fa fa-google-plus"></i></a>
               <a href="linkedin.com" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
               <a href="http://pinterest.com" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest"></i></a>
             </div>
@@ -169,6 +168,7 @@
             <!-- Newsletter Form -->
             <div class="footer-newsletter-form">
               <form action="#" method="post">
+                {% csrf_token %}
                 <input type="email" name="nl-email" value="" placeholder="Email Address">
                 <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
               </form>
@@ -178,7 +178,6 @@
             <div class="footer-social-info">
               <a href="https://facebook.com" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
               <a href="https://twitter.com" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
-              <a href="#" data-toggle="tooltip" data-placement="top" title="Google Plus"><i class="fa fa-google-plus"></i></a>
               <a href="https://linkedin.com" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a>
               <a href="https://pinterest.com" data-toggle="tooltip" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a>
             </div>
