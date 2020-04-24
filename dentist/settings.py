@@ -11,10 +11,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ["SECRET_KEY"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ["DEBUG"]
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -113,15 +112,13 @@ STATICFILES_DIRS = [
 ]
 
 # email settings
-EMAIL_HOST = 'smtp.gmail.com' # localhost
-EMAIL_PORT = 587 # 1025 for localhost
-EMAIL_HOST_USER = os.environ["EMAIL_HOST_USER"] # ALWAYS use environmental variable for secret key, email and password!
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = os.environ["EMAIL_HOST_USER"]
 EMAIL_HOST_PASSWORD = os.environ["EMAIL_HOST_PASSWORD"]
-EMAIL_USE_TSL = True
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 #EMAIL_USE_SSL = False
-#EMAIL_ADDRESS = os.environ["EMAIL_ADDRESS"]
-#PASSWORD = os.environ["PASSWORD"]
-
 
 
 
