@@ -167,9 +167,9 @@
             <p>For great offers, leave your email here...</p>
             <!-- Newsletter Form -->
             <div class="footer-newsletter-form">
-              <form action="#" method="post">
+              <form action="{% url 'home' %}" method="post">
                 {% csrf_token %}
-                <input type="email" name="nl-email" value="" placeholder="Email Address">
+                <input type="email" name="special-offers" value="" placeholder="Email Address">
                 <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
               </form>
             </div>

@@ -25,6 +25,22 @@ def contact(request):
 		return render(request, 'contact.html', {})
 
 
+def offers(request):
+	if request.method == "POST":
+		email_addrss = request.POST['special-offers']
+
+		subject = "Special Offers"
+		message = "Kindly add me:" + " " + email_addrss + " " + "to your 'Special Offers' mailing-list. Thank you."
+		from_email = settings.EMAIL_HOST_USER
+		recipient_list = settings.EMAIL_HOST_USER
+
+		send_mail(subject, message, from_email, [recipient_list], fail_silently=False)
+
+		return render(request, 'home.html', {})
+	else:
+		return render(request, 'home.html', {})
+
+
 def about(request):
 	return render(request, 'about.html', {})
 
