@@ -109,6 +109,9 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
+STATIC_ROOT = [
+    os.path.join(BASE_DIR, 'staticfiles'),
+]
 
 STATIC_URL = '/static/'
 
@@ -126,7 +129,6 @@ EMAIL_HOST_USER = os.environ["EMAIL_HOST_USER"]
 EMAIL_HOST_PASSWORD = os.environ["EMAIL_HOST_PASSWORD"]
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 #EMAIL_USE_SSL = False
-
 
 django_heroku.settings(locals())
 
